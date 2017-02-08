@@ -1,0 +1,335 @@
+.body {background-color: paleturquoise;
+    padding: 2em;
+}
+.wrapper{width: 100%;
+    margin: 0 auto;
+}
+.flex-container{display: flex;
+    flex-flow: column;
+}
+.login {text-decoration: none;
+    margin-right: 2%;
+    float: right;
+    margin-top: 1%;
+}
+.kurv {margin-right: 1%;
+    float: right;
+}
+.box{background-color: white;
+    height: 50px;
+    width: 100%;
+}
+.overskrift{
+    font-family: "MV Boli";
+    font-size: 32px;
+    color: darkorange;
+    margin-top: -42px;
+    margin-left: 50px;
+
+}
+/*searchform*/
+#searchBar{ border: 1px solid darkorange;
+    font-size: 16px;
+    padding: 2px;
+    outline: none;
+    width: 200px;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    float: right;
+    margin-right: 3.5%;
+
+}
+#searchbtn{ border: 1px solid darkorange;
+    font-size: 16px;
+    padding: 2px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    background-color: darkorange;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    float: right;
+    margin-right:10px;
+    width: 32px;
+    height: 32px;
+
+}
+#searchbtn:hover{background: paleturquoise;
+    border-color: paleturquoise;
+}
+
+.navbar {float: left;
+
+}
+.navbar li {display: inline-block;
+           padding: 5px;
+
+
+}
+li a {text-decoration: none;
+
+}
+.menu{ border-bottom: solid paleturquoise;
+
+}
+ul li  {list-style: none;}
+.slider {background-color: white;
+    border-bottom: solid paleturquoise;
+}
+.virksomhed {color: darkorange;
+    background-color: white;
+}
+
+.nyheder {
+    border-bottom: solid paleturquoise;
+
+}
+.tilbud {
+    margin-right: 4%;
+    background-color: white;
+
+}
+.hojre {float: right;
+    margin-top: 0%;
+}
+.h2hojre {float: right;
+          margin-top: -7%;
+}
+footer { border-bottom: solid paleturquoise;
+    background-color: white;
+    color: darkorange;
+    height: 18px;
+   }
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    font-weight: bold;
+
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+
+}
+
+.header {
+    background: white;
+}
+
+.main { flex-grow: 4;
+    text-align: left;
+    background: white;
+
+}
+
+
+.aside-1 { flex-grow: 1;
+    background: white;
+    border-right: solid paleturquoise;
+    width: 5%;
+
+}
+
+.aside-2 {flex-grow: 1;
+    background: white;
+    border-left: solid paleturquoise;
+    width: 5%;
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+    .main    { flex: 3 0; }
+    .aside-1 { order: 1; }
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+}
+
+/*style for signup form*/
+
+input [type-text] {width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 306px;
+    max-width: 306px;
+    margin: 0 auto;
+}
+
+.header h3 {
+    color: darkorange;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: -24%;
+}
+h3 {
+    color: darkorange;
+    font-weight: bold;
+}
+#signup .inputs {
+    margin-top: 20px;
+}
+
+#signup .inputs label {
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+#signup .inputs input[type=email], input[type=password], input[type=firstname], input[type=lastname],
+input[type=address], input[type=zipcode], input[type=city], input[type=phone], input[type=username] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 15px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+    height: 5px;
+}
+
+#signup .inputs input[type=email]:focus, input[type=password]:focus, input[type=firstname]:focus, input[type=lastname]:focus,
+input[type=address]:focus, input[type=zipcode]:focus, input[type=city]:focus, input[type=phone]:focus, input[type=username]:focus {
+    background: #fff;
+    box-shadow: 0px 0px 0px 3px darkorange, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    outline: none;
+}
+
+#signup .inputs label.terms {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#signup .inputs #submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    background: -moz-linear-gradient(
+            top,
+            #b9c5dd 0%,
+            #a4b0cb);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#b9c5dd),
+            to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid darkorange;
+    -moz-box-shadow:
+            0px 5px 5px rgba(000,000,000,0.1),
+            inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+            0px 5px 5px rgba(000,000,000,0.1),
+            inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+            0px 5px 5px rgba(000,000,000,0.1),
+            inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+            0px 1px 3px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+#signup .inputs #submit:hover {
+    background: -moz-linear-gradient(
+            top,
+            #a4b0cb 0%,
+            #b9c5dd);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#a4b0cb),
+            to(#b9c5dd));
+}
+.signbtn{margin-left: -24%;
+
+}
+/*the contract form*/
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    margin-left: -24%;
+}
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    border-radius: 3px;
+    margin-left: -24%;
+}
+input:focus, textarea:focus {
+    border:1px solid darkorange;
+}
+textarea {
+    height: 213px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#submits {
+    width:127px;
+    height:38px;
+    text-indent:-9999px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    font-family: Ahellya;
+}
+
+#submits:hover {
+    opacity:.9;
+}
+.sendbtn{margin-left: -24%;
+
+}
+.besked{margin-left: -24%;
+        color: darkorange;
+}
